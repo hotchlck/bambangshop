@@ -63,11 +63,11 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement unsubscribe function in Notification controller.`
     -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
-    -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
-    -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
-    -   [ ] Commit: `Implement publish function in Program service and Program controller.`
-    -   [ ] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [x] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
+    -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
+    -   [x] Commit: `Implement publish function in Program service and Program controller.`
+    -   [x] Commit: `Edit Product service methods to call notify after create/delete.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -90,6 +90,14 @@ However, it’s more advisable to use DashMap, a pre-built library with guarante
 
 2. If an application only uses the Model, all responsibilities will be handled by the model, making the code for each model more complex and lengthy. The code will manage requests and responses, data container structures, contain methods for business logic, and act as a database with methods for accessing it. In short, all tasks of each MVC component will be handled by the Model’s code.
 
-3. I have ben using Postman since the third semester. I typically use this application to test the functionality of applications by sending requests and checking the responses returned by the application.The user-friendly GUI of Postman is its main advantage. The ability of Postman to export and import allows us to send tests quickly.
+3. I have been using Postman since the third semester. I typically use this application to test the functionality of applications by sending requests and checking the responses returned by the application.The user-friendly GUI of Postman is its main advantage. The ability of Postman to export and import allows us to send tests quickly.
 
 #### Reflection Publisher-3
+1. The observer type used in this tutorial is push. 
+This is evident from the role of the publisher as an active actor sending data to its users.
+
+2. The advantage of using pull in Observer is to reduce the dependency between the observer and the subject, allowing more flexibility
+However, the downside is that it can increase complexity in managing the observer.
+
+3. This will eliminate the real-time characteristic because the notification process is done sequentially. 
+This effect will be very noticeable if the number of observers is very large.
