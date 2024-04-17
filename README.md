@@ -75,11 +75,15 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
-    1.If we aim to incorporate a variety of methods or distinct behaviors for different customer types, it’s crucial to establish a customer interface. However, if all customers are expected to exhibit the same behaviors and methods, a single Model structure would suffice.
+1. If we aim to incorporate a variety of methods or distinct behaviors for different customer types, it’s crucial to establish a customer interface. 
+However, if all customers are expected to exhibit the same behaviors and methods, a single Model structure would suffice.
 
-    2. Vec might not be the best choice if an attribute needs to be unique, as Vec doesn’t automatically guarantee element uniqueness. In this case, DashMap, which has already been implemented, is a better option because it ensures key uniqueness and prevents URL duplication. With DashMap, each element is unique in the data structure because when an existing key is inserted, its value is updated with the new one.
+2. Vec might not be the best choice if an attribute needs to be unique, as Vec doesn’t automatically guarantee element uniqueness. 
+In this case, DashMap, which has already been implemented, is a better option because it ensures key uniqueness and prevents URL duplication. 
+With DashMap, each element is unique in the data structure because when an existing key is inserted, its value is updated with the new one.
 
-    3. Direct implementation of the Singleton pattern can also ensure thread safety for the program, provided it’s correctly implemented. However, it’s more advisable to use DashMap, a pre-built library with guaranteed thread safety, as it eliminates the need for us to implement it ourselves.
+3. Direct implementation of the Singleton pattern can also ensure thread safety for the program, provided it’s correctly implemented. 
+However, it’s more advisable to use DashMap, a pre-built library with guaranteed thread safety, as it eliminates the need for us to implement it ourselves.
 
 #### Reflection Publisher-2
 
