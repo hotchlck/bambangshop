@@ -46,15 +46,15 @@ You can install Postman via this website: https://www.postman.com/downloads/
     (You might want to use `cargo check` if you only need to verify your work without running the app.)
 
 ## Mandatory Checklists (Publisher)
--   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
+-   [x] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Subscriber model struct.`
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Subscriber repository.`
-    -   [ ] Commit: `Implement list_all function in Subscriber repository.`
-    -   [ ] Commit: `Implement delete function in Subscriber repository.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
+    -   [x] Commit: `Create Subscriber model struct.`
+    -   [x] Commit: `Create Notification model struct.`
+    -   [x] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
+    -   [x] Commit: `Implement add function in Subscriber repository.`
+    -   [x] Commit: `Implement list_all function in Subscriber repository.`
+    -   [x] Commit: `Implement delete function in Subscriber repository.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -75,6 +75,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+    1.If we aim to incorporate a variety of methods or distinct behaviors for different customer types, it’s crucial to establish a customer interface. However, if all customers are expected to exhibit the same behaviors and methods, a single Model structure would suffice.
+
+    2. Vec might not be the best choice if an attribute needs to be unique, as Vec doesn’t automatically guarantee element uniqueness. In this case, DashMap, which has already been implemented, is a better option because it ensures key uniqueness and prevents URL duplication. With DashMap, each element is unique in the data structure because when an existing key is inserted, its value is updated with the new one.
+
+    3. Direct implementation of the Singleton pattern can also ensure thread safety for the program, provided it’s correctly implemented. However, it’s more advisable to use DashMap, a pre-built library with guaranteed thread safety, as it eliminates the need for us to implement it ourselves.
 
 #### Reflection Publisher-2
 
