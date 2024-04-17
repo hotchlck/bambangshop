@@ -86,5 +86,10 @@ With DashMap, each element is unique in the data structure because when an exist
 However, it’s more advisable to use DashMap, a pre-built library with guaranteed thread safety, as it eliminates the need for us to implement it ourselves.
 
 #### Reflection Publisher-2
+1. The division of tasks between the Model, Service, and Repository is crucial to ensure that the Model does not handle all responsibilities alone, but also shares them with the Service and Repository according to their respective functions. This division allows the application to adhere to clean code principles and the Single Responsibility Principle, making the code easier to maintain and update.
+
+2. If an application only uses the Model, all responsibilities will be handled by the model, making the code for each model more complex and lengthy. The code will manage requests and responses, data container structures, contain methods for business logic, and act as a database with methods for accessing it. In short, all tasks of each MVC component will be handled by the Model’s code.
+
+3. I have ben using Postman since the third semester. I typically use this application to test the functionality of applications by sending requests and checking the responses returned by the application.The user-friendly GUI of Postman is its main advantage. The ability of Postman to export and import allows us to send tests quickly.
 
 #### Reflection Publisher-3
